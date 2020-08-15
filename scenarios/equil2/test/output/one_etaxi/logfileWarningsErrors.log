@@ -1,0 +1,28 @@
+2020-08-15 16:16:24,713 ERROR MatsimRuntimeModifications:75 Getting uncaught Exception in Thread main
+java.lang.RuntimeException: Unmaterialized config group: ev
+	at org.matsim.core.config.consistency.UnmaterializedConfigGroupChecker.checkConsistency(UnmaterializedConfigGroupChecker.java:32)
+	at org.matsim.core.config.Config.checkConsistency(Config.java:225)
+	at org.matsim.core.controler.ControlerUtils.checkConfigConsistencyAndWriteToLog(ControlerUtils.java:65)
+	at org.matsim.core.controler.AbstractController$1.run(AbstractController.java:78)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:69)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:52)
+	at org.matsim.core.controler.AbstractController.run(AbstractController.java:88)
+	at org.matsim.core.controler.NewControler.run(NewControler.java:84)
+	at org.matsim.core.controler.Controler.run(Controler.java:247)
+	at org.matsim.project.RunMatsim.main(RunMatsim.java:63)
+2020-08-15 16:16:24,719 ERROR MatsimRuntimeModifications:81 ERROR --- This is an unexpected shutdown!
+2020-08-15 16:16:24,720 ERROR MatsimRuntimeModifications:84 Shutdown possibly caused by the following Exception:
+java.lang.RuntimeException: Unmaterialized config group: ev
+	at org.matsim.core.config.consistency.UnmaterializedConfigGroupChecker.checkConsistency(UnmaterializedConfigGroupChecker.java:32)
+	at org.matsim.core.config.Config.checkConsistency(Config.java:225)
+	at org.matsim.core.controler.ControlerUtils.checkConfigConsistencyAndWriteToLog(ControlerUtils.java:65)
+	at org.matsim.core.controler.AbstractController$1.run(AbstractController.java:78)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:69)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:52)
+	at org.matsim.core.controler.AbstractController.run(AbstractController.java:88)
+	at org.matsim.core.controler.NewControler.run(NewControler.java:84)
+	at org.matsim.core.controler.Controler.run(Controler.java:247)
+	at org.matsim.project.RunMatsim.main(RunMatsim.java:63)
+2020-08-15 16:16:28,923 ERROR MatsimRuntimeModifications:99 ERROR --- MATSim unexpectedly terminated. Please check the output or the logfile with warnings and errors for hints.
+2020-08-15 16:16:28,924 ERROR MatsimRuntimeModifications:100 ERROR --- results should not be used for further analysis.
+2020-08-15 16:16:28,925 ERROR MatsimRuntimeModifications:104 ERROR --- This was an unexpected shutdown! See the log file for a possible reason.

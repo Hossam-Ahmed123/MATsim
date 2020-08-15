@@ -1,0 +1,43 @@
+2020-08-15 16:47:13,140  WARN PrepareForSimImpl:191 'usePersonIdForMissingVehicleId' is deprecated. It will be removed soon.
+2020-08-15 16:47:13,182 ERROR ParallelPersonAlgorithmUtils$ExceptionHandler:164 Thread PersonPrepareForSim.0 died with exception while handling events.
+org.matsim.core.router.TripRouter$UnknownModeException: unregistered main mode |drt|: does not pertain to [pt, car, non_network_walk, ride, walk, bike]
+	at org.matsim.core.router.TripRouter.calcRoute(TripRouter.java:216)
+	at org.matsim.core.router.PlanRouter.run(PlanRouter.java:90)
+	at org.matsim.core.population.algorithms.PersonPrepareForSim.run(PersonPrepareForSim.java:177)
+	at org.matsim.core.population.algorithms.ParallelPersonAlgorithmUtils$PersonAlgoThread.run(ParallelPersonAlgorithmUtils.java:145)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-15 16:47:13,182 ERROR ParallelPersonAlgorithmUtils$ExceptionHandler:164 Thread PersonPrepareForSim.1 died with exception while handling events.
+org.matsim.core.router.TripRouter$UnknownModeException: unregistered main mode |drt|: does not pertain to [pt, car, non_network_walk, ride, walk, bike]
+	at org.matsim.core.router.TripRouter.calcRoute(TripRouter.java:216)
+	at org.matsim.core.router.PlanRouter.run(PlanRouter.java:90)
+	at org.matsim.core.population.algorithms.PersonPrepareForSim.run(PersonPrepareForSim.java:177)
+	at org.matsim.core.population.algorithms.ParallelPersonAlgorithmUtils$PersonAlgoThread.run(ParallelPersonAlgorithmUtils.java:145)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-15 16:47:13,185 ERROR MatsimRuntimeModifications:75 Getting uncaught Exception in Thread main
+java.lang.RuntimeException: Exception while processing persons. Cannot guarantee that all persons have been fully processed.
+	at org.matsim.core.population.algorithms.ParallelPersonAlgorithmUtils.run(ParallelPersonAlgorithmUtils.java:120)
+	at org.matsim.core.controler.PrepareForSimImpl.run(PrepareForSimImpl.java:153)
+	at org.matsim.core.controler.NewControler.prepareForSim(NewControler.java:115)
+	at org.matsim.core.controler.AbstractController$1.run(AbstractController.java:79)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:69)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:52)
+	at org.matsim.core.controler.AbstractController.run(AbstractController.java:88)
+	at org.matsim.core.controler.NewControler.run(NewControler.java:84)
+	at org.matsim.core.controler.Controler.run(Controler.java:247)
+	at org.matsim.project.RunMatsim.main(RunMatsim.java:63)
+2020-08-15 16:47:13,186 ERROR MatsimRuntimeModifications:81 ERROR --- This is an unexpected shutdown!
+2020-08-15 16:47:13,187 ERROR MatsimRuntimeModifications:84 Shutdown possibly caused by the following Exception:
+java.lang.RuntimeException: Exception while processing persons. Cannot guarantee that all persons have been fully processed.
+	at org.matsim.core.population.algorithms.ParallelPersonAlgorithmUtils.run(ParallelPersonAlgorithmUtils.java:120)
+	at org.matsim.core.controler.PrepareForSimImpl.run(PrepareForSimImpl.java:153)
+	at org.matsim.core.controler.NewControler.prepareForSim(NewControler.java:115)
+	at org.matsim.core.controler.AbstractController$1.run(AbstractController.java:79)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:69)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:52)
+	at org.matsim.core.controler.AbstractController.run(AbstractController.java:88)
+	at org.matsim.core.controler.NewControler.run(NewControler.java:84)
+	at org.matsim.core.controler.Controler.run(Controler.java:247)
+	at org.matsim.project.RunMatsim.main(RunMatsim.java:63)
+2020-08-15 16:47:14,417 ERROR MatsimRuntimeModifications:99 ERROR --- MATSim unexpectedly terminated. Please check the output or the logfile with warnings and errors for hints.
+2020-08-15 16:47:14,417 ERROR MatsimRuntimeModifications:100 ERROR --- results should not be used for further analysis.
+2020-08-15 16:47:14,417 ERROR MatsimRuntimeModifications:104 ERROR --- This was an unexpected shutdown! See the log file for a possible reason.
